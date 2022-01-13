@@ -3,14 +3,14 @@ const http = require("http");
 const hostname = "127.0.0.1";
 const port = 8000;
 
-const server = http.createServer(function (request, response) {
+const server = http.createServer(function (req, res) {
   // Send the HTTP header
   // HTTP Status: 200 : OK
   // Content Type: text/plain
-  response.writeHead(200, { "Content-Type": "text/plain" });
+  res.writeHead(200, { "Content-Type": "text/plain" });
 
   // Send the response body as "Hello World"
-  response.end("Hello World\n");
+  res.end("Hello World\n");
 });
 
 // Prints a log once the server starts listening
