@@ -1,3 +1,3 @@
 import "./script2.js";
 
-console.log("some scripts!");
+console.log("script 1");
